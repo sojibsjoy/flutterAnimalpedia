@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068391246501",
+    "project_id": "animalpedia-60abf",
+    "storage_bucket": "animalpedia-60abf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068391246501:android:7ed97c52a57160946efb4c",
+        "android_client_info": {
+          "package_name": "com.example.animalpedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068391246501-j9g2v213lf9e1inip5f3kd2kjsrhd5u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANGTAVRoWZUC8vbqZelsu_ahG4xC-uoRo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068391246501-j9g2v213lf9e1inip5f3kd2kjsrhd5u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
