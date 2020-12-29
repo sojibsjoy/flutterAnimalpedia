@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animalpedia/configuration.dart';
 
-class Screen2 extends StatelessWidget {
+class Screen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +43,7 @@ class Screen2 extends StatelessWidget {
             margin: EdgeInsets.only(top: 20),
             child: Align(
               alignment: Alignment.topCenter,
-              child: Hero(tag: 1, child: Image.asset('images/persian.png')),
+              child: Hero(tag: 1, child: Image.asset('images/ragdoll.png')),
             ),
           ),
           Align(
@@ -58,55 +58,47 @@ class Screen2 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8.0, top: 4.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Name:    Persian',
+                      'Name:    Ragdoll',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 19,
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'Origin:    Riverside, California, USA',
+                      style: TextStyle(
+                        fontSize: 17,
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      'Origin:    Iran',
+                      'Lifespan:    12-17 years',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      'Lifespan:    10-17 years',
+                      'Weight: 10 to 20 pounds',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Colors.red,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
-                      'Other names: Persian longhair',
+                      'Length: 17 to 21 inches',
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 17,
                         color: Colors.red,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      'Scientific name: Felis catus',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.red,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Text(
-                      'The Persian cat is a long-haired breed of cat characterized by its round face and short muzzle.',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:animalpedia/configuration.dart';
 import 'package:animalpedia/Screens/screen2.dart';
+import 'package:animalpedia/Screens/screen3.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -88,8 +89,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       );
                     },
-                    child: CircleAvatar(),
-                  )
+                    child: Icon(
+                      Icons.person,
+                      size: 35,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -168,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Align(
                             child: Hero(
                                 tag: 1,
-                                child: Image.asset('images/pet-cat2.png')),
+                                child: Image.asset('images/persian.png')),
                           )
                         ],
                       ),
@@ -184,7 +188,55 @@ class _HomeScreenState extends State<HomeScreen> {
                             bottomRight: Radius.circular(20),
                           ),
                         ),
-                        // you can add the description of the cat here
+                        // description of the persian cat
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8.0, top: 4.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Name:    Persian',
+                                style: TextStyle(
+                                  fontSize: 19,
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Origin:    Iran',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Lifespan:    10-17 years',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Weight: 7 to 12 pounds',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Lenght: 14 to 18 inches',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     )
                   ],
@@ -196,7 +248,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Screen2(),
+                    builder: (context) => Screen3(),
                   ),
                 );
               },
@@ -219,7 +271,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           Align(
                             child: Hero(
                                 tag: 2,
-                                child: Image.asset('images/pet-cat2.png')),
+                                child: Image.asset('images/ragdoll.png')),
                           )
                         ],
                       ),
@@ -235,7 +287,54 @@ class _HomeScreenState extends State<HomeScreen> {
                             bottomRight: Radius.circular(20),
                           ),
                         ),
-                        // you can add the description of the cat here
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 8.0, top: 4.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Name:    Ragdoll',
+                                style: TextStyle(
+                                  fontSize: 19,
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Origin:    Riverside, California, USA',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Lifespan:    12-17 years',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Weight: 10 to 20 pounds',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Length: 17 to 21 inches',
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.red,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     )
                   ],
@@ -260,14 +359,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           margin: EdgeInsets.only(top: 50),
                         ),
                         Align(
-                          child: Image.asset('images/pet-cat1.png'),
+                          child: Image.asset('images/british_shorthair.png'),
                         )
                       ],
                     ),
                   ),
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(top: 60, bottom: 20),
+                      margin: EdgeInsets.only(top: 60, bottom: 10),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: shadowList,
@@ -276,13 +375,61 @@ class _HomeScreenState extends State<HomeScreen> {
                           bottomRight: Radius.circular(20),
                         ),
                       ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 8.0, top: 4.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Name:    British Shorthair',
+                              style: TextStyle(
+                                fontSize: 19,
+                                color: Colors.blue,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Origin:    Great Britain',
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Lifespan:    12-17 years',
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Weight: 7 to 17 pounds',
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Length: 22 to 25 inches',
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.red,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
             SizedBox(
-              height: 50,
+              height: 40,
             )
           ],
         ),

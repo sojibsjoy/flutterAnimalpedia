@@ -19,7 +19,10 @@ class _DrawerScreenState extends State<DrawerScreen> {
         children: [
           Row(
             children: [
-              CircleAvatar(),
+              Icon(
+                Icons.person,
+                size: 35,
+              ),
               SizedBox(
                 width: 10,
               ),
